@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type(:</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #typing{
+            position: relative;
+        }
+        #typing::after{
+            content: '';
+            position: absolute;
+            border-right: 1px solid black;
+            height: 55px;
+            width: 10px;
+            animation: blink 0.5s infinite ease;
+        }
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class=" flex h-screen w-full bg-gradient-to-br from-yellow-300 to-green-300">
+        <div class="flex gap-2 justify-center items-center h-96 w-full text-5xl ">
+            <h1>HII I'm yogesh, I'm a</h1>
+            <h1 id="typing">hii</h1>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
